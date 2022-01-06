@@ -13,11 +13,6 @@ git clone https://github.com/dch42/sort_albums.git && chmod +x ./sort_albums/sor
 
 ## Usage
 
-Invoke the script, passing the *input* directory `-i` and *output* directory `-o` as options:
-~~~
-./sort_albums.sh -i ~/Music/Downloads -o ~/Music/Sorted
-~~~
-
 ### Options
 
 ~~~
@@ -25,6 +20,11 @@ Usage: sort_albums.sh [-hio]
   -h  help, show usage info
   -i  path to unorganized files
   -o  path to organized folder
+~~~
+
+Invoke the script, passing the *input* directory `-i` and *output* directory `-o` as options:
+~~~
+./sort_albums.sh -i ~/Music/Downloads -o ~/Music/Sorted
 ~~~
 
 ## Directory Structure
