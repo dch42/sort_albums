@@ -26,3 +26,23 @@ Usage: sort_albums.sh [-hio]
   -i  path to unorganized files
   -o  path to organized folder
 ~~~
+
+## Directory Structure
+
+Creates a hierarchy in `-o path` like so:
+
+~~~
+Sort_test/
+├── A
+│   └── Artist-Album
+├── B
+│   └── Bartist-Album
+├── C
+│   └── Cartist-Album
+├── D
+├── E
+...
+├── Z
+├── _Numbers
+└── _Special\ Characters
+~~~
