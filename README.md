@@ -47,4 +47,4 @@ Sorted/
 └── _Special\ Characters
 ~~~
 
-The script will walk subdirectories of input path, taking note of the name of the folders and copying to output path accordingly. 
+The script walks subdirectories of input path, taking note of the name of the folders and copying to output path accordingly. 
