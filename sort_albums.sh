@@ -18,7 +18,11 @@ echo "You probably don't want to run this as root. Exiting..." && exit 1
 declare in_path="."
 declare out_path="$HOME/Sorted_Music"
 
+# ansi zone
+
 declare grn="\e[0;92m"
+declare cyblnk="\e[5m\e[036m"
+declare reset="\e[0m"
 
 function usage {
     echo "Usage: $(basename $0) [-hio]" 2>&1
@@ -63,13 +67,13 @@ function move_dir {
     case $type in
         special) cp -r "$dir_path" "${out_path}_Special Characters/$folder" &&
             printf "${grn}[SUCCESS] $folder copied!${reset}\n"
-            printf "\e[5m\e[36m==>\e[0m ${out_path}_Special Characters/$folder\n\n" ;;
+            printf "${cyblnk}==>${reset} ${out_path}_Special Characters/$folder\n\n" ;;
         num) cp -r "$dir_path" "${out_path}_Numbers/$folder" &&
             printf "${grn}[SUCCESS] $folder copied!${reset}\n"
-            printf "\e[5m\e[36m==>\e[0m ${out_path}_Numbers/$folder\n\n" ;;        
+            printf "${cyblnk}==>${reset} ${out_path}_Numbers/$folder\n\n" ;;        
         alpha) cp -r "$dir_path" "${out_path}$letter/$folder" && 
             printf "${grn}[SUCCESS] $folder copied!${reset}\n"
-            printf "\e[5m\e[36m==>\e[0m ${out_path}$letter/$folder\n\n" ;;
+            printf "${cyblnk}==>${reset} ${out_path}$letter/$folder\n\n" ;;
     esac
 }
 
