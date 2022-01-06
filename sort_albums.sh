@@ -13,6 +13,8 @@
 [[ $UID = 0 ]] && 
 echo "You probably don't want to run this as root. Exiting..." && exit 1
 
+# set defaults
+
 declare in_path="."
 declare out_path="$HOME/Sorted_Music"
 
@@ -91,7 +93,8 @@ usage
 
 [[ ! -d $out_path ]] && 
 echo "Creating output directory..." && 
-mkdir -v $out_path
+mkdir -pv $out_path/{A..Z} && 
+mkdir -v $out_path/{"_Special Characters","_Numbers"}
 
 # walk dirs and sort
 
