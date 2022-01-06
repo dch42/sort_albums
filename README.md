@@ -32,7 +32,7 @@ Invoke the script, passing the *input* directory `-i` and *output* directory `-o
 Creates a hierarchy in `-o path` like so:
 
 ~~~
-Sort_test/
+Sorted/
 ├── A
 │   └── Artist-Album
 ├── B
