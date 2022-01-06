@@ -1,7 +1,7 @@
 # sort_albums
 ***Script is a work in progress, use with caution***
 
-Shell script to sort unsorted directory of album folders into alphabetically organized subfolders.
+Shell script to sort unsorted directory of album folders into alphabetically organized subfolders. Assumes album folders begin with artist name, e.g. `%Artist-%Year-%Album`.
 
 ## Setup
 
@@ -29,7 +29,7 @@ Invoke the script, passing the *input* directory `-i` and *output* directory `-o
 
 ## Directory Structure
 
-Creates a hierarchy in `-o path` like so:
+Creates a hierarchy in output path like so:
 
 ~~~
 Sorted/
@@ -46,3 +46,5 @@ Sorted/
 ├── _Numbers
 └── _Special\ Characters
 ~~~
+
+The script will walk subdirectories of input path, taking note of the name of the folders and copying to output path accordingly. 
