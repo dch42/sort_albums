@@ -1,5 +1,6 @@
 # sort_albums
 ***Script is a work in progress, use with caution***
+
 Shell script to sort unsorted directory of album folders into alphabetically organized subfolders.
 
 ## Setup
